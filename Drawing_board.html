@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Param's Drawing Board</title>
+    <link rel="stylesheet" href="/Drawing_board.css">
+</head>
+<body>
+    <h1>Param's Drawing Board</h1>
+    <div class="toolbar">
+        <label for="colorPicker">Change Color:</label>
+        <input type="color" id="colorPicker" value="#00FF9C">
+        <label for="brushSize">Change Size:</label>
+        <input type="range" id="brushSize" min="1" max="10" value="5">
+        <input type="text" id="textInput" placeholder="Enter text">
+        <button onclick="addText()">Add Text</button>
+        <button onclick="clearCanvas()">Clear</button>
+        <button onclick="saveCanvas()">Save</button>
+    </div>
+    <canvas id="drawingCanvas" width="800" height="500"></canvas>
+    <script src="/Drawing_board.js"></script>
+</body>
+</html>
